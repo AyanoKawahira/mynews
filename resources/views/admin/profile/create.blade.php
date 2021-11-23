@@ -44,6 +44,8 @@
                             <textarea class="form-control" name="introduction" rows="15">{{ old('introduction') }}</textarea>
                         </div>
                     </div>
+                    {{ csrf_field() }}
+                    <input type="submit" class="btn btn-primary" value="送信">
                 </form>
             </div>
         </div>
